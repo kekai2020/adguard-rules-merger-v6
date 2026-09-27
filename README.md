@@ -382,7 +382,7 @@ whitelist_output:
 
 `.github/workflows/merge.yml` 配置：
 
-- **触发条件**：每 6 小时定时执行（`0 */6 * * *`）、手动触发（workflow_dispatch）、推送改动 `config/`、`merger/`、`merge_rules.py` 等路径时触发
+- **触发条件**：每 24 小时定时执行（`0 0 * * *`）、手动触发（workflow_dispatch）、推送改动 `config/`、`merger/`、`merge_rules.py` 等路径时触发
 - **执行流程**：先运行 `pytest`，测试通过后再执行合并
 - **缓存**：使用 `actions/cache` 持久化 `cache/` 目录（key 前缀 `rule-cache-v6-`）
 - **自动提交**：仅当 `output/` 有变化时才提交，提交前 `git pull --rebase` 防止冲突
