@@ -15,7 +15,6 @@ on:
       - 'requirements.txt'
       - '.github/workflows/**'
 
-# 防止并发运行造成 git 冲突
 concurrency:
   group: merge-rules-${{ github.ref }}
   cancel-in-progress: false
@@ -75,7 +74,6 @@ jobs:
 
       - name: Run merge
         env:
-          PYTHON_JIT: "1"              # 启用 JIT（3.13 实验性）      
           VIRUSTOTAL_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
@@ -89,7 +87,7 @@ jobs:
           ls -la output/ 2>/dev/null || (echo "ERROR: output/ directory missing!" && exit 1)
 
           echo ""
-          echo "=== Required files (minimal) ==="
+          echo "=== Required files ==="
           for f in merged_rules.txt whitelist.txt stats.json; do
             if [ -f "output/$f" ]; then
               size=$(stat -c%s "output/$f")
@@ -101,6 +99,26 @@ jobs:
           done
 
           echo ""
+          echo "=== Optional format files ==="
+          for f in hosts.txt domains.txt clash.yaml surge.list smartdns.conf; do
+            if [ -f "output/$f" ]; then
+              size=$(stat -c%s "output/$f")
+              echo "✓ $f ($(numfmt --to=iec $size))"
+            else
+              echo "○ $f (not enabled)"
+            fi
+          done
+
+          echo ""
+          echo "=== Tiered files ==="
+          for f in merged_ads.txt merged_malware.txt merged_tracking.txt merged_phishing.txt merged_mining.txt merged_other.txt; do
+            if [ -f "output/$f" ]; then
+              size=$(stat -c%s "output/$f")
+              echo "✓ $f ($(numfmt --to=iec $size))"
+            fi
+          done
+
+          echo ""
           echo "merged_rules.txt lines: $(wc -l < output/merged_rules.txt)"
           grep -q '^! Version:' output/merged_rules.txt || (echo "ERROR: missing Version header" && exit 1)
 
@@ -108,17 +126,13 @@ jobs:
           echo "=== Stats summary ==="
           python -c "import json; s=json.load(open('output/stats.json')); print(f\"block={s['rules']['block']:,} allow={s['rules']['allow']:,} raw={s['rules']['before']:,} dedup={s['rules']['dedup_rate']}%\")"
 
-          echo ""
-          echo "=== All generated files ==="
-          ls -1 output/
-          
       - name: Commit subscription files
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # 只提交订阅文件 — 报告/JSON 含墙钟时间戳
+          # 提交所有订阅格式 + 分层文件 + 分级白名单
           git add -f output/*.txt output/*.yaml output/*.list output/*.conf 2>/dev/null || true
           if [ -d output/whitelist_by_category ]; then
             git add -f output/whitelist_by_category/ 2>/dev/null || true
@@ -133,12 +147,10 @@ jobs:
             exit 0
           fi
 
-          # 从 stats.json 提取摘要，作为提交信息的一部分
           SUMMARY=$(python -c "import json; s=json.load(open('output/stats.json')); print(f\"block={s['rules']['block']:,} allow={s['rules']['allow']:,}\")" 2>/dev/null || echo "")
 
           git commit -m "Auto-merge: update rules [${SUMMARY}] $(date -u +'%Y-%m-%d %H:%M UTC')"
 
-          # push 失败重试（最多 3 次）
           for i in 1 2 3; do
             if git pull --rebase origin main && git push origin main; then
               echo "Push successful (attempt $i)"
@@ -181,5 +193,5 @@ jobs:
         with:
           name: merged-rules-v6
           path: output/
-          retention-days: 90
+          retention-days: 30
           compression-level: 6
