@@ -25,7 +25,7 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
@@ -40,7 +40,7 @@ jobs:
 
   merge:
     needs: test
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 40
 
     steps:
@@ -88,8 +88,8 @@ jobs:
           ls -la output/ 2>/dev/null || (echo "ERROR: output/ directory missing!" && exit 1)
 
           echo ""
-          echo "=== Required files ==="
-          for f in merged_rules.txt whitelist.txt hosts.txt domains.txt stats.json; do
+          echo "=== Required files (minimal) ==="
+          for f in merged_rules.txt whitelist.txt stats.json; do
             if [ -f "output/$f" ]; then
               size=$(stat -c%s "output/$f")
               echo "✓ $f ($(numfmt --to=iec $size))"
@@ -107,6 +107,10 @@ jobs:
           echo "=== Stats summary ==="
           python -c "import json; s=json.load(open('output/stats.json')); print(f\"block={s['rules']['block']:,} allow={s['rules']['allow']:,} raw={s['rules']['before']:,} dedup={s['rules']['dedup_rate']}%\")"
 
+          echo ""
+          echo "=== All generated files ==="
+          ls -1 output/
+          
       - name: Commit subscription files
         id: commit
         run: |
