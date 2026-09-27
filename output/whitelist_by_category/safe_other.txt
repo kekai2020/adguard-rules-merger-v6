@@ -1,0 +1,35 @@
+! Title: AdGuard Rules Merger — Whitelist (safe / 其他)
+! Count: 32
+! Version: 5ff6247f2507
+@@||ad-gone.com^
+@@||ad-putting.gw.zt-express.com^
+@@||ad.10010.com^
+@@||ad.abchina.com^
+@@||ad.kazakinfo.com^
+@@||ad.ourgame.com^
+@@||ad.siemens.com.cn^
+@@||adcdn.pingan.com^
+@@||ads.finance^
+@@||analysis.chess.com^
+@@||api.ads.tvb.com^
+@@||api.huangye.miui.com^
+@@||app-advertise.zhihuishu.com^
+@@||app.adjust.com^
+@@||app.powerbi.com^
+@@||autocomplete.clearbit.com^
+@@||baozhang.baidu.com^
+@@||buyad.bi-xenon.cn^
+@@||captcha.su.baidu.com^
+@@||counter-strike.net^
+@@||dxcloud.episerver.net^
+@@||fritz.box^
+@@||ftp.bmp.ovh^
+@@||img.ads.tvb.com^
+@@||passport.bobo.com^
+@@||sdkapi.sms.mob.com^
+@@||skydrivesync.policies.live.net^
+@@||stats.gov.cn^
+@@||tj.gov.cn^
+@@||tongji.cn^
+@@||tongji.edu.cn^
+@@||widget.intercom.io^

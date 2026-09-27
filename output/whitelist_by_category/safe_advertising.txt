@@ -1,0 +1,6 @@
+! Title: AdGuard Rules Merger — Whitelist (safe / 广告/营销)
+! Count: 3
+! Version: 5de571ce2a02
+@@||ads.taboola.com^
+@@||advert.kf5.com^
+@@||tracker.eu.org^

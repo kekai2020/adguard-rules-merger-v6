@@ -1,0 +1,4 @@
+! Title: AdGuard Rules Merger — Whitelist (safe / CDN/基础设施)
+! Count: 1
+! Version: a3d04e936d66
+@@||log.mmstat.com^
