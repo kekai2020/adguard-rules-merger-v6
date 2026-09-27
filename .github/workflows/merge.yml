@@ -132,17 +132,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # 提交所有订阅格式 + 分层文件 + 分级白名单
-          git add -f output/*.txt output/*.yaml output/*.list output/*.conf 2>/dev/null || true
-          if [ -d output/whitelist_by_category ]; then
-            git add -f output/whitelist_by_category/ 2>/dev/null || true
-          fi
+          # V5 的双步法：清理陈旧跟踪 + 强制添加
+          # 不吞错误，让问题暴露
+          git rm -r --cached output/ 2>&1 || true
+          git add -f output/
 
+          echo "=== Files now tracked in output/ ==="
+          git ls-files output/ | head -20
           echo "=== Staged changes ==="
           git diff --cached --stat
 
           if git diff --cached --quiet; then
-            echo "No subscription-file changes — skipping commit"
+            echo "No changes detected — skipping commit"
             echo "committed=false" >> $GITHUB_OUTPUT
             exit 0
           fi
@@ -151,6 +152,7 @@ jobs:
 
           git commit -m "Auto-merge: update rules [${SUMMARY}] $(date -u +'%Y-%m-%d %H:%M UTC')"
 
+          # 用 rebase 避免并发冲突
           for i in 1 2 3; do
             if git pull --rebase origin main && git push origin main; then
               echo "Push successful (attempt $i)"
@@ -161,7 +163,7 @@ jobs:
             sleep 5
           done
 
-          echo "ERROR: Push failed after 3 attempts — check branch protection rules"
+          echo "ERROR: Push failed after 3 attempts"
           echo "committed=false" >> $GITHUB_OUTPUT
           exit 1
 
