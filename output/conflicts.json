@@ -4,10 +4,10 @@
     "blocked_rule": "||ad.10010.com^",
     "blocked_category": "ads",
     "blocked_sources": [
-      "CHN: anti-AD",
       "AWAvenue Ads Rule",
-      "OISD Blocklist Small",
       "CHN: AdRules DNS List",
+      "CHN: anti-AD",
+      "OISD Blocklist Small",
       "HaGeZi's Ultimate Blocklist"
     ],
     "whitelist_rule": "@@||ad.10010.com^",

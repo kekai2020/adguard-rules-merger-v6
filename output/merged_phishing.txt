@@ -1,6 +1,6 @@
 ! Title: Merged phishing filter (V6)
 ! Category: phishing
-! Version: 86b4cd3366d4-phishing
+! Version: 7b3f90acb60e-phishing
 ! Rules: 61095
 !
 ||0-1-x.16215785.xyz^

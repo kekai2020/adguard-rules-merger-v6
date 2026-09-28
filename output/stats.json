@@ -1,34 +1,34 @@
 {
   "version": "6.1",
-  "content_version": "86b4cd3366d4",
+  "content_version": "7b3f90acb60e",
   "sources": {
     "total": 18,
     "ok": 18,
-    "cached": 12,
+    "cached": 16,
     "failed": []
   },
   "rules": {
-    "before": 3933135,
-    "after": 3295133,
-    "block": 3295071,
+    "before": 3933178,
+    "after": 3295155,
+    "block": 3295093,
     "allow": 62,
     "dedup_rate": 16.2
   },
   "dedup": {
-    "exact_merged": 594289,
-    "normalized_merged": 3654,
+    "exact_merged": 597957,
+    "normalized_merged": 6,
     "regex_merged": 0
   },
   "optimization": {
-    "exact_aggregated": 40043,
+    "exact_aggregated": 40044,
     "wildcard_aggregated": 2,
     "wildcard_promoted": 0,
-    "total_aggregated": 40045,
+    "total_aggregated": 40046,
     "conflict_resolved": 8,
     "whitelist_blocked": 8
   },
   "dropped": {
-    "pattern_dropped": 1046,
+    "pattern_dropped": 1047,
     "quality_dropped": 38,
     "css_dropped": 0,
     "comment_dropped": 162,
@@ -37,7 +37,7 @@
     "modifier_rules_skipped": 5
   },
   "categories": {
-    "ads": 334178,
+    "ads": 334200,
     "malware": 2328485,
     "tracking": 378,
     "phishing": 61095,
@@ -52,7 +52,7 @@
       {
         "source_a": "AdGuard DNS filter",
         "source_b": "CHN: AdRules DNS List",
-        "overlap": 167968,
+        "overlap": 167988,
         "rate_a": 93.0,
         "rate_b": 84.5,
         "jaccard": 79.4
@@ -63,7 +63,7 @@
         "overlap": 87194,
         "rate_a": 86.5,
         "rate_b": 43.9,
-        "jaccard": 41.1
+        "jaccard": 41.0
       },
       {
         "source_a": "CHN: AdRules DNS List",
@@ -76,7 +76,7 @@
       {
         "source_a": "AdGuard DNS filter",
         "source_b": "HaGeZi's Ultimate Blocklist",
-        "overlap": 83289,
+        "overlap": 83290,
         "rate_a": 46.1,
         "rate_b": 29.4,
         "jaccard": 21.9
@@ -164,7 +164,7 @@
       {
         "source_a": "CHN: AdRules DNS List",
         "source_b": "HaGeZi's Threat Intelligence Feeds",
-        "overlap": 10478,
+        "overlap": 10480,
         "rate_a": 5.3,
         "rate_b": 0.5,
         "jaccard": 0.4
@@ -910,8 +910,8 @@
       "HaGeZi's Threat Intelligence Feeds": 2326894,
       "HaGeZi's Gambling Blocklist": 561754,
       "HaGeZi's Ultimate Blocklist": 283769,
-      "CHN: AdRules DNS List": 198822,
-      "AdGuard DNS filter": 180606,
+      "CHN: AdRules DNS List": 198842,
+      "AdGuard DNS filter": 180629,
       "Phishing Army": 126125,
       "CHN: anti-AD": 100766,
       "OISD Blocklist Small": 55262,
@@ -951,8 +951,8 @@
         "HaGeZi's Threat Intelligence Feeds": 2326894,
         "HaGeZi's Gambling Blocklist": 561754,
         "HaGeZi's Ultimate Blocklist": 283769,
-        "CHN: AdRules DNS List": 198822,
-        "AdGuard DNS filter": 180606,
+        "CHN: AdRules DNS List": 198842,
+        "AdGuard DNS filter": 180629,
         "Phishing Army": 126125,
         "CHN: anti-AD": 100766,
         "OISD Blocklist Small": 55262,
@@ -970,14 +970,14 @@
       "cells": {
         "CHN: AdRules DNS List": {
           "AdGuard DNS filter": {
-            "overlap": 167968,
+            "overlap": 167988,
             "jaccard": 79.4,
             "rate_a": 84.5,
             "rate_b": 93.0
           },
           "CHN: anti-AD": {
             "overlap": 87194,
-            "jaccard": 41.1,
+            "jaccard": 41.0,
             "rate_a": 43.9,
             "rate_b": 86.5
           },
@@ -1056,7 +1056,7 @@
             "rate_b": 42.8
           },
           "AdGuard DNS filter": {
-            "overlap": 83289,
+            "overlap": 83290,
             "jaccard": 21.9,
             "rate_a": 29.4,
             "rate_b": 46.1
@@ -1148,7 +1148,7 @@
             "rate_b": 25.6
           },
           "CHN: AdRules DNS List": {
-            "overlap": 10478,
+            "overlap": 10480,
             "jaccard": 0.4,
             "rate_a": 0.5,
             "rate_b": 5.3
@@ -1645,5 +1645,5 @@
     "added": 0,
     "removed": 0
   },
-  "elapsed_seconds": 38.546
+  "elapsed_seconds": 43.101
 }
