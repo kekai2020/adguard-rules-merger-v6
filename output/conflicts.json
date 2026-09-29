@@ -1,13 +1,26 @@
 [
   {
+    "domain": "app.adjust.com",
+    "blocked_rule": "||app.adjust.com^",
+    "blocked_category": "ads",
+    "blocked_sources": [
+      "AdGuard DNS filter"
+    ],
+    "whitelist_rule": "@@||app.adjust.com^",
+    "whitelist_sources": [
+      "CHN: anti-AD"
+    ],
+    "conflict_type": "exact"
+  },
+  {
     "domain": "ad.10010.com",
     "blocked_rule": "||ad.10010.com^",
     "blocked_category": "ads",
     "blocked_sources": [
       "AWAvenue Ads Rule",
-      "CHN: AdRules DNS List",
-      "CHN: anti-AD",
       "OISD Blocklist Small",
+      "CHN: anti-AD",
+      "CHN: AdRules DNS List",
       "HaGeZi's Ultimate Blocklist"
     ],
     "whitelist_rule": "@@||ad.10010.com^",
@@ -89,19 +102,6 @@
       "HaGeZi's Ultimate Blocklist"
     ],
     "whitelist_rule": "@@||ads.privacy.qq.com^",
-    "whitelist_sources": [
-      "CHN: anti-AD"
-    ],
-    "conflict_type": "exact"
-  },
-  {
-    "domain": "app.adjust.com",
-    "blocked_rule": "||app.adjust.com^",
-    "blocked_category": "ads",
-    "blocked_sources": [
-      "AdGuard DNS filter"
-    ],
-    "whitelist_rule": "@@||app.adjust.com^",
     "whitelist_sources": [
       "CHN: anti-AD"
     ],
