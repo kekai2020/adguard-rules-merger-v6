@@ -18,10 +18,10 @@
     "blocked_category": "ads",
     "blocked_sources": [
       "AWAvenue Ads Rule",
-      "CHN: anti-AD",
       "OISD Blocklist Small",
-      "HaGeZi's Ultimate Blocklist",
-      "CHN: AdRules DNS List"
+      "CHN: anti-AD",
+      "CHN: AdRules DNS List",
+      "HaGeZi's Ultimate Blocklist"
     ],
     "whitelist_rule": "@@||ad.10010.com^",
     "whitelist_sources": [
