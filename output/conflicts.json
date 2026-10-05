@@ -18,8 +18,8 @@
     "blocked_category": "ads",
     "blocked_sources": [
       "AWAvenue Ads Rule",
-      "OISD Blocklist Small",
       "CHN: anti-AD",
+      "OISD Blocklist Small",
       "CHN: AdRules DNS List",
       "HaGeZi's Ultimate Blocklist"
     ],
@@ -54,19 +54,6 @@
       "CHN: anti-AD"
     ],
     "conflict_type": "exact"
-  },
-  {
-    "domain": "stats.tj.gov.cn",
-    "blocked_rule": "||stats.tj.gov.cn^",
-    "blocked_category": "ads",
-    "blocked_sources": [
-      "HaGeZi's Ultimate Blocklist"
-    ],
-    "whitelist_rule": "@@||tj.gov.cn^",
-    "whitelist_sources": [
-      "CHN: anti-AD"
-    ],
-    "conflict_type": "cascade"
   },
   {
     "domain": "settings-win.data.microsoft.com",
