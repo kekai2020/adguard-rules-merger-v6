@@ -1,10 +1,11 @@
 ! Title: Merged mining filter (V6)
 ! Category: mining
-! Version: 19ca0dd9b5ca-mining
-! Rules: 168
+! Version: e697dde56428-mining
+! Rules: 170
 !
 ||1q2w3.fun^
 ||aeros01.tk^
+||aeros02.tk^
 ||aeros11.tk^
 ||analytics.blue^
 ||andlache.com^
@@ -46,6 +47,7 @@
 ||coinimp.net^
 ||coinminingonline.com^
 ||coinnebula.com^
+||coinpirate.cf^
 ||coinpot.co^
 ||coinrail.io^
 ||cpufan.club^
