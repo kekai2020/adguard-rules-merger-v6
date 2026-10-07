@@ -1,6 +1,7 @@
 ! Title: AdGuard Rules Merger — Whitelist (safe)
-! Count: 53
-! Version: cdf8514e2d5e
+! Count: 84
+! Version: f7827d8af06a
+@@||3gppnetwork.org^
 @@||ad-block.dns.adguard.com^
 @@||ad-gone.com^
 @@||ad-putting.gw.zt-express.com^
@@ -23,34 +24,64 @@
 @@||app-advertise.zhihuishu.com^
 @@||app.adjust.com^
 @@||app.powerbi.com^
+@@||asusrouter.com^
 @@||autocomplete.clearbit.com^
+@@||b.barracudacentral.org^
+@@||backscatterer.org^
 @@||baozhang.baidu.com^
+@@||bl.blocklist.de^
+@@||bl.spamcop.net^
 @@||buyad.bi-xenon.cn^
 @@||captcha.su.baidu.com^
 @@||center-h5api.m.taobao.com^
 @@||chart-embed.service.newrelic.com^
 @@||counter-strike.net^
+@@||direct.quickconnect.to^
+@@||dnsbl.dronebl.org^
+@@||dnswl.org^
+@@||dq.spamhaus.net^
 @@||dxcloud.episerver.net^
 @@||fritz.box^
 @@||ftp.bmp.ovh^
 @@||future.biz.weibo.com^
+@@||hostkarma.junkemailfilter.com^
 @@||img.ads.tvb.com^
 @@||insideruser.microsoft.com^
+@@||ipv4only.arpa^
 @@||log.mmstat.com^
+@@||mail.abusix.zone^
+@@||mailspike.net^
 @@||msftconnecttest.com^
+@@||myunraid.net^
+@@||nordspam.com^
 @@||passport.bobo.com^
+@@||psbl.surriel.com^
+@@||routerlogin.com^
+@@||routerlogin.net^
 @@||sdkapi.sms.mob.com^
 @@||settings-win.data.microsoft.com^
 @@||skyapi.onedrive.live.com^
 @@||skydrivesync.policies.live.net^
+@@||sophosxl.net^
+@@||spameatingmonkey.net^
+@@||spamhaus.org^
+@@||spamrats.com^
 @@||stat.jseea.cn^
 @@||stats.gov.cn^
 @@||stats.uptimerobot.com^
 @@||storage.live.com^
+@@||surbl.org^
 @@||tj.gov.cn^
 @@||tongji.cn^
 @@||tongji.edu.cn^
+@@||tor.dan.me.uk^
+@@||torexit.dan.me.uk^
+@@||tplinkap.net^
+@@||tplinkrepeater.net^
+@@||tplinkwifi.net^
 @@||tracker.eu.org^
 @@||tube.e.kuaishou.com^
+@@||uceprotect.net^
 @@||uland.taobao.com^
+@@||uribl.com^
 @@||widget.intercom.io^

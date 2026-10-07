@@ -1,6 +1,7 @@
 ! Title: AdGuard Rules Merger — Whitelist (safe / 其他)
-! Count: 32
-! Version: 5ff6247f2507
+! Count: 59
+! Version: 37f5c27e1214
+@@||3gppnetwork.org^
 @@||ad-gone.com^
 @@||ad-putting.gw.zt-express.com^
 @@||ad.10010.com^
@@ -16,20 +17,46 @@
 @@||app-advertise.zhihuishu.com^
 @@||app.adjust.com^
 @@||app.powerbi.com^
+@@||asusrouter.com^
 @@||autocomplete.clearbit.com^
+@@||b.barracudacentral.org^
+@@||backscatterer.org^
 @@||baozhang.baidu.com^
+@@||bl.blocklist.de^
 @@||buyad.bi-xenon.cn^
 @@||captcha.su.baidu.com^
 @@||counter-strike.net^
+@@||direct.quickconnect.to^
+@@||dnsbl.dronebl.org^
+@@||dnswl.org^
+@@||dq.spamhaus.net^
 @@||dxcloud.episerver.net^
 @@||fritz.box^
 @@||ftp.bmp.ovh^
+@@||hostkarma.junkemailfilter.com^
 @@||img.ads.tvb.com^
+@@||ipv4only.arpa^
+@@||mail.abusix.zone^
+@@||mailspike.net^
+@@||myunraid.net^
+@@||nordspam.com^
 @@||passport.bobo.com^
+@@||psbl.surriel.com^
+@@||routerlogin.com^
+@@||routerlogin.net^
 @@||sdkapi.sms.mob.com^
 @@||skydrivesync.policies.live.net^
+@@||sophosxl.net^
+@@||spameatingmonkey.net^
+@@||spamrats.com^
 @@||stats.gov.cn^
 @@||tj.gov.cn^
 @@||tongji.cn^
 @@||tongji.edu.cn^
+@@||tor.dan.me.uk^
+@@||torexit.dan.me.uk^
+@@||tplinkap.net^
+@@||tplinkrepeater.net^
+@@||tplinkwifi.net^
+@@||uceprotect.net^
 @@||widget.intercom.io^
