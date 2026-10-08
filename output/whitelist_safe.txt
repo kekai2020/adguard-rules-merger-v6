@@ -1,6 +1,6 @@
 ! Title: AdGuard Rules Merger — Whitelist (safe)
-! Count: 84
-! Version: f7827d8af06a
+! Count: 85
+! Version: b3770553ab75
 @@||3gppnetwork.org^
 @@||ad-block.dns.adguard.com^
 @@||ad-gone.com^
@@ -58,6 +58,7 @@
 @@||psbl.surriel.com^
 @@||routerlogin.com^
 @@||routerlogin.net^
+@@||s.mvconf.f.360.cn^
 @@||sdkapi.sms.mob.com^
 @@||settings-win.data.microsoft.com^
 @@||skyapi.onedrive.live.com^

@@ -1,6 +1,6 @@
 ! Title: AdGuard Rules Merger — Whitelist (suspicious)
-! Count: 17
-! Version: 9e31d2bb913c
+! Count: 16
+! Version: de530a265f15
 @@||ad.cityu.edu.hk^
 @@||avqs.mcafee.com^
 @@||avts.mcafee.com^
@@ -16,5 +16,4 @@
 @@||news-app.abumedia.yql.yahoo.com^
 @@||plex.direct^
 @@||router.asus.com^
-@@||s.mvconf.f.360.cn^
 @@||speedport.ip^
