@@ -1,6 +1,6 @@
 ! Title: AdGuard Rules Merger — Whitelist (safe / 其他)
-! Count: 60
-! Version: 34e5fa37c2a3
+! Count: 61
+! Version: c4a804f3bcde
 @@||3gppnetwork.org^
 @@||ad-gone.com^
 @@||ad-putting.gw.zt-express.com^
@@ -39,6 +39,7 @@
 @@||mail.abusix.zone^
 @@||mailspike.net^
 @@||myunraid.net^
+@@||news-app.abumedia.yql.yahoo.com^
 @@||nordspam.com^
 @@||passport.bobo.com^
 @@||psbl.surriel.com^
