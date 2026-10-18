@@ -131,6 +131,7 @@ class TestScamCheck:
         assert conf is True
 
     @pytest.mark.asyncio
+    @pytest.mark.slow
     async def test_safe_domain_not_flagged(self):
         import aiohttp
         try:
@@ -144,6 +145,7 @@ class TestScamCheck:
         assert result["decision"] == "TRUSTED"
 
     @pytest.mark.asyncio
+    @pytest.mark.slow
     async def test_typosquat_flagged(self):
         import aiohttp
         try:
