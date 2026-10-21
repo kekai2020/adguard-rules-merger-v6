@@ -1,5 +1,18 @@
 [
   {
+    "domain": "supportmalerschwab.direct.quickconnect.to",
+    "blocked_rule": "||supportmalerschwab.direct.quickconnect.to^",
+    "blocked_category": "phishing",
+    "blocked_sources": [
+      "Phishing Army"
+    ],
+    "whitelist_rule": "@@||direct.quickconnect.to^",
+    "whitelist_sources": [
+      "HaGeZi's DNS Rebind Protection"
+    ],
+    "conflict_type": "cascade"
+  },
+  {
     "domain": "autocomplete.clearbit.com",
     "blocked_rule": "||autocomplete.clearbit.com^",
     "blocked_category": "ads",
@@ -82,8 +95,8 @@
     "blocked_rule": "||ad.10010.com^",
     "blocked_category": "ads",
     "blocked_sources": [
-      "AWAvenue Ads Rule",
       "OISD Blocklist Small",
+      "AWAvenue Ads Rule",
       "HaGeZi's Ultimate Blocklist",
       "CHN: anti-AD",
       "CHN: AdRules DNS List"
