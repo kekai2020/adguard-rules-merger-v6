@@ -1,7 +1,7 @@
 ! Title: Merged mining filter (V6)
 ! Category: mining
-! Version: f8a06aa18670-mining
-! Rules: 163
+! Version: 018b1c259edf-mining
+! Rules: 162
 !
 ||1q2w3.fun^
 ||aeros01.tk^
@@ -118,7 +118,6 @@
 ||mxcdn1.now.sh^
 ||mxcdn2.now.sh^
 ||my.domain^
-||nahnoji.cz^
 ||nametraff.com^
 ||nathetsof.com^
 ||nch-software.info^
