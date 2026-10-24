@@ -17,8 +17,8 @@
     "blocked_rule": "||ad.10010.com^",
     "blocked_category": "ads",
     "blocked_sources": [
-      "AWAvenue Ads Rule",
       "OISD Blocklist Small",
+      "AWAvenue Ads Rule",
       "CHN: anti-AD",
       "CHN: AdRules DNS List",
       "HaGeZi's Ultimate Blocklist"
@@ -106,5 +106,18 @@
       "CHN: anti-AD"
     ],
     "conflict_type": "exact"
+  },
+  {
+    "domain": "slm501y93viprep.dxcloud.episerver.net",
+    "blocked_rule": "||slm501y93viprep.dxcloud.episerver.net^",
+    "blocked_category": "malware",
+    "blocked_sources": [
+      "HaGeZi's Threat Intelligence Feeds"
+    ],
+    "whitelist_rule": "@@||dxcloud.episerver.net^",
+    "whitelist_sources": [
+      "CHN: anti-AD"
+    ],
+    "conflict_type": "cascade"
   }
 ]
