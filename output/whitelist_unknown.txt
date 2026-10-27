@@ -1,5 +1,6 @@
 ! Title: AdGuard Rules Merger — Whitelist (unknown)
-! Count: 2
-! Version: 0d0fb1e36ccc
+! Count: 3
+! Version: aa851d1a1743
 @@||hash.cymru.com^
+@@||tongji.edu.cn^
 @@||tplinklogin.net^
