@@ -1,6 +1,6 @@
 ! Title: AdGuard Rules Merger — Whitelist (safe)
-! Count: 85
-! Version: dee021c64a19
+! Count: 86
+! Version: 8b8c5852dcd1
 @@||3gppnetwork.org^
 @@||ad-block.dns.adguard.com^
 @@||ad-gone.com^
@@ -75,6 +75,7 @@
 @@||surbl.org^
 @@||tj.gov.cn^
 @@||tongji.cn^
+@@||tongji.edu.cn^
 @@||tor.dan.me.uk^
 @@||torexit.dan.me.uk^
 @@||tplinkap.net^
