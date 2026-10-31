@@ -1,6 +1,6 @@
 ! Title: AdGuard Rules Merger — Whitelist (safe / 其他)
-! Count: 60
-! Version: f6acda8a8a9e
+! Count: 61
+! Version: c4a804f3bcde
 @@||3gppnetwork.org^
 @@||ad-gone.com^
 @@||ad-putting.gw.zt-express.com^
@@ -21,6 +21,7 @@
 @@||autocomplete.clearbit.com^
 @@||b.barracudacentral.org^
 @@||backscatterer.org^
+@@||baozhang.baidu.com^
 @@||bl.blocklist.de^
 @@||buyad.bi-xenon.cn^
 @@||captcha.su.baidu.com^

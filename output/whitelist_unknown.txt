@@ -1,6 +1,5 @@
 ! Title: AdGuard Rules Merger — Whitelist (unknown)
-! Count: 3
-! Version: ffb41cfaf158
-@@||baozhang.baidu.com^
+! Count: 2
+! Version: 0d0fb1e36ccc
 @@||hash.cymru.com^
 @@||tplinklogin.net^
